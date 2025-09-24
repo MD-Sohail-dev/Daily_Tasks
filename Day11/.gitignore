@@ -1,0 +1,55 @@
+# ======================
+# Java / Spring Boot
+# ======================
+target/
+*.log
+*.class
+
+# Ignore application.properties (sensitive)
+src/main/resources/application.properties
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# ======================
+# IDEs
+# ======================
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# ======================
+# OS Files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Frontend / Node (if any)
+# ======================
+node_modules/

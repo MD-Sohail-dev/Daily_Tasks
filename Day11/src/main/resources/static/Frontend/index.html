@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Task Management System</h1>
+
+<!-- Add Task -->
+<section>
+    <h2>Add Task</h2>
+    <form id="addTaskForm">
+        <input type="text" id="title" placeholder="Task Title" required>
+        <input type="text" id="description" placeholder="Task Description" required>
+        <button type="submit">Add Task</button>
+    </form>
+</section>
+
+<!-- Get All Tasks -->
+<section>
+    <h2>All Tasks</h2>
+    <button onclick="getAllTasks()">Fetch All Tasks</button>
+    <ul id="taskList"></ul>
+</section>
+
+<!-- Get Task By ID -->
+<section>
+    <h2>Get Task By ID</h2>
+    <input type="number" id="taskIdInput" placeholder="Enter Task ID">
+    <button onclick="getTaskById()">Get Task</button>
+    <div id="taskDetails"></div>
+</section>
+
+<!-- Delete Task -->
+<section>
+    <h2>Delete Task</h2>
+    <input type="number" id="deleteTaskId" placeholder="Enter Task ID">
+    <button onclick="deleteTask()">Delete</button>
+    <p id="deleteMessage"></p>
+</section>
+
+<!-- Search Task -->
+<section>
+    <h2>Search Task</h2>
+    <input type="text" id="searchInput" placeholder="Enter Title or Keyword">
+    <button onclick="searchTask()">Search</button>
+    <ul id="searchResults"></ul>
+</section>
+
+
+<!-- Update Task -->
+<section>
+    <h2>Update Task</h2>
+    <form id="updateTaskForm">
+        <input type="number" id="updateId" placeholder="Task ID" required>
+        <input type="text" id="updateTitle" placeholder="New Title" required>
+        <input type="text" id="updateDescription" placeholder="New Description" required>
+        <button type="submit">Update Task</button>
+    </form>
+    <p id="updateMessage"></p>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
